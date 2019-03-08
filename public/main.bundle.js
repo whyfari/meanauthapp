@@ -300,7 +300,7 @@ var LoginComponent = (function () {
     };
     LoginComponent.prototype.onLoginSubmit = function () {
         var _this = this;
-        console.log(this.username);
+        console.log("FA User trying to log in: " + this.username);
         var user = {
             username: this.username,
             password: this.password
