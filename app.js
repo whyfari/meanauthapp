@@ -48,7 +48,8 @@ app.get('/', (req,res) => {
     res.send('FA Invalid endpoint');
 })
 
-// causes crash when provided an undefined path
+// kinda causes crash when provided an undefined path
+// but w/o it refreshing valid links fails
 app.get('*', (req,res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
